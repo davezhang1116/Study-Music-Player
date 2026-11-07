@@ -1,0 +1,10 @@
+services:
+  radio:
+    build: .
+    container_name: slow-study-radio
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    env_file: .env
+    volumes:
+      - ./data:/data   # your listening history lives here, back it up if you care about it

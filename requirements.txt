@@ -1,0 +1,6 @@
+fastapi>=0.115
+uvicorn[standard]>=0.30
+httpx>=0.27
+yt-dlp[default]
+librosa>=0.10      # tempo (BPM) detection
+imageio-ffmpeg     # bundled ffmpeg, used to read short audio excerpts
